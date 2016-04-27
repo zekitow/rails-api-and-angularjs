@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "properties": {
+    "errors": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "required": [
+            "0"
+          ]
+        },
+        "address": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "star_rating": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "accomodation_type": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "address",
+        "star_rating",
+        "accomodation_type"
+      ]
+    }
+  },
+  "required": [
+    "errors"
+  ]
+}

@@ -1,0 +1,16 @@
+<h3>Search</h3>
+
+<div class="form-group">
+  <label class="col-sm-4 control-label">Search</label>
+  <input type="text" class="form-control" placeholder="By name or address" ng-model="q" ng-change="searchNow()"/>
+</div>
+
+<table class="table">
+    <tr ng-repeat="hotel in hotels">
+        <td>{{hotel.id}}</td>
+        <td><a ui-sref="show({ id: hotel.id })">{{hotel.name}}</a></td>
+        <td>{{hotel.address}}</td>
+        <td>{{hotel.star_rating}}</td>
+        <td>{{hotel.accomodation_type}}</td>
+    </tr>
+</table>

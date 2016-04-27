@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "star_rating": {
+      "type": "integer"
+    },
+    "accomodation_type": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "address",
+    "star_rating",
+    "accomodation_type",
+    "created_at",
+    "updated_at"
+  ]
+}

@@ -1,0 +1,25 @@
+
+<h3>Hotels</h3>
+<table class="table">
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Rating</th>
+        <th>Accomodation Type</th>
+        <th></th>
+    </tr>
+    <tr ng-repeat="hotel in hotels">
+        <td>{{hotel.id}}</td>
+        <td><a ui-sref="show({ id: hotel.id })">{{hotel.name}}</a></td>
+        <td>{{hotel.address}}</td>
+        <td>{{hotel.star_rating}}</td>
+        <td>{{hotel.accomodation_type}}</td>
+        <td>
+            <a class="btn btn-default btn-xs" ui-sref="edit({ id: hotel.id })">Edit</a>
+            <a class="btn btn-danger btn-xs"  ng-click="remove(hotel)">Delete</a>
+        </td>
+    </tr>
+</table>
+
+<a ui-sref="newHotel" class="btn-primary btn-lg nodecoration">New Hotel</a>
