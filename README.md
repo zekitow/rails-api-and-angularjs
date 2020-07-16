@@ -56,7 +56,3 @@ The terminal should show something like "rvm is a shell function".
     rails s -p 3000
 
 Now you enviorement is read to use and you can find all hotels at: * http://localhost:3000/api/hotels *
-
-# Questions ?
-
-Please, get in touch by e-mail at zeca@digup.io or by Skype (zekitow).
